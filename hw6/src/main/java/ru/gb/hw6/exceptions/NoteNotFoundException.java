@@ -1,15 +1,9 @@
 package ru.gb.hw6.exceptions;
 
-/**
- * Исключение, которое генерируется, когда заметка не найдена.
- */
-public class NoteNotFoundException extends RuntimeException {
+import lombok.NoArgsConstructor;
 
-    /**
-     * Конструктор исключения с указанным сообщением об ошибке.
-     *
-     * @param message сообщение об ошибке
-     */
+@NoArgsConstructor
+public class NoteNotFoundException extends RuntimeException{
     public NoteNotFoundException(String message) {
         super(message);
     }
